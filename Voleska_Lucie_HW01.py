@@ -13,10 +13,10 @@ for char in text:
 
 char_counts = dict()
 for char in char_list:
-    if char[0] in char_counts:
-        char_counts[char[0]] += 1
+    if char in char_counts:
+        char_counts[char] += 1
     else:
-        char_counts[char[0]] = 1
+        char_counts[char] = 1
 sorted_counts = dict(sorted(char_counts.items()))
 
 
