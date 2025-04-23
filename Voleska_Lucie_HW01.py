@@ -7,10 +7,9 @@ char_list = []
 for char in text:
     if re.match(r"[A-Z]", char):
         char_list.append(char.lower())
-    elif char not in [' ', '\n']:
-        char_list.append(char)
     else:
-        pass
+        if char not in [' ', '\n']:
+            char_list.append(char)    
 
 char_counts = dict()
 for char in char_list:
