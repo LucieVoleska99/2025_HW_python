@@ -1,4 +1,3 @@
-import re
 import json
 
 with open('alice.txt', encoding='utf-8') as file:
